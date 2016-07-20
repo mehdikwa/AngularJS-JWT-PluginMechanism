@@ -8,19 +8,19 @@
 
 `gulp watch serve`
 
-Pour voir tous les flux gérés par la lancement dev ou la mise en production de gulp : `gulp graph`
+To see gulp flow generated on deployment use : `gulp graph`
 
 ## Deploy code (production)
 
 `gulp writeToProd`
 
-> Fichiers générés dans `.one-gulp/prod`
+> Files will be generated on `.one-gulp/prod`
 
 ## Test & Lint
 
-> Pour les tests fonctionnels avec [protractor](http://angular.github.io/protractor), installez `npm install -g protractor@2`, puis installez les dépendances du navigateur Selenium avec `webdriver-manager update`.
+> For the function tests with [protractor](http://angular.github.io/protractor), install `npm install -g protractor@2`, the install navigator dependencies Selenium with `webdriver-manager update`.
 
-> Concernant Selenium, il faut avoir Java d'installé : `sudo apt-get install default-jdk`
+> Java needs to be installed for Selenium : `sudo apt-get install default-jdk`
 
 `gulp lint`
 
@@ -32,4 +32,4 @@ Pour voir tous les flux gérés par la lancement dev ou la mise en production de
 
 ## Docs
 
-`gulp docs`, disponible sur `/docs`
+`gulp docs`, available on `/docs`
