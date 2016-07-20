@@ -1,0 +1,29 @@
+<md-content flex layout-padding>
+    <div>
+        <form name="loginForm" ng-submit="vm.login(loginForm)" novalidate>
+            <div layout-gt-sm="row">
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Firstname</label>
+                    <input type="text" ng-model="vm.user.firstname">
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Lastname</label>
+                    <input type="text" ng-model="vm.user.firstname">
+                </md-input-container>
+            </div>
+
+            <md-input-container class="md-block">
+                <label>Username</label>
+                <input type="text" ng-model="vm.user.username" ng-required="true">
+            </md-input-container>
+            <md-input-container md-no-float class="md-block">
+                <label>Password</label>
+                <input type="password" ng-model="vm.user.password" ng-required="true">
+            </md-input-container>
+
+            <md-input-container class="md-block">
+                <md-button class="md-raised md-primary" ng-disabled="loginForm.$invalid" type="submit">Se connecter</md-button>
+            </md-input-container>
+        </form>
+    </div>
+</md-content>

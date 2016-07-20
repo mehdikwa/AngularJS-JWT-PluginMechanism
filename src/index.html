@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Modular</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- style sheet -->
+        <link href="bower_components/angular-material-data-table/dist/md-data-table.min.css" rel="stylesheet" type="text/css"/>
+        <!-- module -->
+        <script type="text/javascript" src="/bower_components/angular-material-data-table/dist/md-data-table.js"></script>
+
+        <!-- inject:css -->
+        <!-- endinject -->
+    </head>
+
+    <body ng-controller="CoreController as vm">
+        <toaster-container></toaster-container>
+
+        <section layout="row" flex>
+            <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+
+                <header class="nav-header" ss-style-color="{ 'background-color': 'primary.default' }">
+                    <a ui-sref="dashboard" class="logo">
+                        <h1 class="md-heading">Angular JWT with Plugins mechanism</h1>
+                    </a>
+                </header>
+
+                <md-content flex role="navigation" ss-style-color="{ 'background-color': 'primary.default' }">
+                    <ss-sidenav flex menu="vm.menu"></ss-sidenav>
+                </md-content>
+            </md-sidenav>
+
+            <md-content layout="column" flex ui-view role="main"></md-content>
+        </section>
+
+        <!-- inject:js -->
+        <!-- endinject -->
+    </body>
+</html>

@@ -1,0 +1,11 @@
+<input type="text" ng-model="search">
+
+<table>
+  <tr ng-repeat='product in vm.products | filter:search'>
+    <td>{{product.index}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.surname}}</td>
+    <td>{{product.fullname}}</td>
+    <td>{{product.email}}</td>
+  </tr>
+</table>

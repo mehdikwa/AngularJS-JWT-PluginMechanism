@@ -1,0 +1,43 @@
+[
+  {
+    "name": "extensions.client",
+    "label": "Clients",
+    "namespace": "clients",
+    "path": "extensions/client/client.module.js",
+    "states": [
+      {
+        "name": "clients",
+        "abstract": true,
+        "url": "/clients",
+        "templateUrl": "extensions/client/layout.html"
+      },
+      {
+        "name": "clients.main",
+        "abstract": false,
+        "url": "",
+        "templateUrl": "extensions/client/main.html"
+      }
+    ]
+  }, {
+    "name": "extensions.widget",
+    "label": "Widgets",
+    "namespace": "widgets",
+    "path": "extensions/widget/widget.module.js",
+    "states": [
+      {
+        "name": "widgets",
+        "abstract": true,
+        "url": "/widgets",
+        "templateUrl": "extensions/widget/layout.html"
+      },
+      {
+        "name": "widgets.main",
+        "abstract": false,
+        "url": "",
+        "templateUrl": "extensions/widget/main.html",
+        "controller": "WidgetsController",
+        "controllerAs": "vm"
+      }
+    ]
+  }
+]

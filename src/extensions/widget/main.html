@@ -1,0 +1,23 @@
+<md-content layout="vertical" flex id="content">
+    <div layout="row">
+        <md-content layout="column" flex>
+            <h1>Je m'appelle {{vm.title}}</h1>
+
+            <md-content>
+                <form name="userForm">
+                    <md-input-container>
+                        <label>Nom</label>
+                        <input name="title" ng-model="vm.title" ng-required="true">
+                        <div ng-messages="userForm.title.$error">
+                            <div ng-message="required">This is required!</div>
+                        </div>
+                    </md-input-container>
+
+                    <md-input-container>
+                        <md-button class="md-raised">OK</md-button>
+                    </md-input-container>
+                </form>
+            </md-content>
+        </md-whiteframe>
+    </div>
+</md-content>

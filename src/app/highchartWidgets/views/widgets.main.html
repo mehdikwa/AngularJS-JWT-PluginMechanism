@@ -1,0 +1,60 @@
+<div class="row-fluid">
+    <div class="span6">
+        <p>Pure bootstrap table</p>
+        <!-- exact table from live demo -->
+        <md-table-container>
+            <table md-table md-row-select multiple>
+                <caption>Bootstrap pure table</caption>
+                <thead md-head>
+                <tr md-row>
+                    <th md-column md-order-by="nameToLower"><span>name</span></th>
+                    <th md-column md-numeric md-order-by="age.value">age</th>
+                    <th md-column md-numeric>height</th>
+                </tr>
+                </thead>
+                <tbody md-body>
+                <tr md-row md-select="age" md-select-id="name" md-auto-select ng-repeat="value in values">
+                    <td md-cell>{{value.name}}</td>
+                    <td md-cell>{{value.age}}</td>
+                    <td md-cell>{{value.height}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </md-table-container>
+
+
+        <table st-table="rowCollection" class="table table-striped">
+            <thead>
+            <tr>
+                <th>first name</th>
+                <th>last name</th>
+                <th>birth date</th>
+                <th>balance</th>
+                <th>email</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="row in rowCollection">
+                <td>{{row.firstName}}</td>
+                <td>{{row.lastName}}</td>
+                <td>{{row.birthDate}}</td>
+                <td>{{row.balance}}</td>
+                <td>{{row.email}}</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+    <div class="span6">
+        <p>Highstocks sample 1</p>
+        <div id="chart1"></div>
+    </div>
+
+</div>
+<div class="row-fluid">
+    <div class="span6"><p>Highcharts sample 1</p>
+        <div id="chart2"></div></div>
+    <div class="span6"><p>Highcharts sample 2</p>
+        <div id="chart3"></div></div>
+</div>

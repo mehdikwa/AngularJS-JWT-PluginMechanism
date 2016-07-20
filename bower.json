@@ -1,0 +1,38 @@
+{
+  "name": "modular",
+  "version": "0.0.1",
+  "dependencies": {
+    "a0-angular-storage": "0.0.15",
+    "angular": "1.5.3",
+    "angular-jwt": "0.0.9",
+    "angular-material": "1.0.9",
+    "angular-material-sidenav": "0.0.13",
+    "angular-translate": "2.11.0",
+    "angular-translate-loader-static-files": "2.11.0",
+    "angular-smart-table": "2.1.8",
+    "angular-ui-router": "0.2.18",
+    "AngularJS-Toaster": "2.0.0",
+    "oclazyload": "1.0.9",
+    "react": "15.1.0",
+    "restangular": "1.5.2",
+    "underscore": "1.8.3",
+    "jquery-ui": "~1.10.4",
+    "jquery": "2.2.3",
+    "highstock-release": "^4.2.5",
+    "angular-material-data-table": "^0.10.9"
+  },
+  "overrides": {
+    "moment": {
+      "main": [
+        "moment.js",
+        "locale/fr.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "angular-mocks": "1.5.3"
+  },
+  "resolutions": {
+    "angular": "1.5.3"
+  }
+}
